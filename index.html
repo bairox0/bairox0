@@ -6,38 +6,45 @@
     <title>بايرو ميمز 🔥 Pyro</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a1a; color: white; text-align: center; margin: 0; padding: 20px; }
-        header { background: linear-gradient(45deg, #ff4500, #ff8c00); padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+        header { background: linear-gradient(45deg, #ff4500, #ff8c00); padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.5); margin-bottom: 25px; }
+        
+        /* الصورة المربعة اللي طلبتها */
+        .avatar { 
+            width: 160px; 
+            height: 160px; 
+            border-radius: 20px; /* حواف مربعة احترافية */
+            border: 4px solid white; 
+            object-fit: cover; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            margin-bottom: 15px; 
+            cursor: pointer; 
+            transition: 0.4s; 
+        }
+        .avatar:hover { transform: scale(1.05) rotate(2deg); border-color: #ff4500; }
+        
         h1 { margin: 0; font-size: 2.5em; text-shadow: 2px 2px 4px #000; }
-        .meme-card { background: #2d2d2d; margin: 25px auto; padding: 20px; border-radius: 15px; max-width: 500px; border: 1px solid #ff4500; }
-        img { width: 100%; border-radius: 10px; border: 2px solid #444; }
-        .btn { display: inline-block; margin-top: 15px; padding: 12px 25px; background-color: #ff4500; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background-color: #cc3700; transform: scale(1.05); }
-        .upload-section { margin-top: 40px; padding: 20px; border-top: 2px dashed #444; }
+        .btn { display: inline-block; margin-top: 20px; padding: 15px 35px; background-color: #ff4500; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2em; transition: 0.3s; }
+        .btn:hover { background-color: #cc3700; transform: translateY(-3px); }
     </style>
 </head>
 <body>
 
     <header>
+        <a href="https://www.instagram.com/bairo_x0?igsh=eDFyM2Z1aXZjY2t4" target="_blank">
+            <img src="https://i.postimg.cc/mD8PscwP/8bc53c84.jpg" alt="بايرو" class="avatar">
+        </a>
         <h1>🔥 موقع بايرو للميمز 🔥</h1>
-        <p>المكان الرسمي لمتابعين بايرو - استمتع واحفظ</p>
+        <p>المكان الرسمي لمتابعين بايرو - اضغط على الصورة لمتابعتي</p>
     </header>
 
-    <div class="meme-card">
-        <h3>ميمز رقم #1</h3>
-        <img src="https://via.placeholder.com/500x350/ff4500/ffffff?text=Pyro+Meme+1" alt="Meme">
+    <div style="background: #2d2d2d; padding: 20px; border-radius: 15px; border: 1px solid #ff4500; max-width: 500px; margin: 0 auto;">
+        <h3>أول ميمز قادم قريباً!</h3>
+        <p>الموقع هسة صار جاهز بأفتار بايرو الجديد</p>
         <a href="#" class="btn">تحميل الميمز ⬇️</a>
     </div>
 
-    <div class="upload-section">
-        <h3>هل عندك ميمز قوي؟</h3>
-        <p>ارفع الفيديو هسة (قيد التطوير)</p>
-        <input type="file" accept="video/*" style="color: white;">
-        <br>
-        <button class="btn" onclick="alert('بايرو دا يشتغل على السيرفر هسة حتى يكدر يستلم فيديوهاتكم!')">رفع الفيديو 🚀</button>
-    </div>
-
     <footer>
-        <p>جميع الحقوق محفوظة لبايرو © 2026</p>
+        <p style="margin-top: 30px; font-size: 0.8em; color: #888;">جميع الحقوق محفوظة لبايرو © 2026</p>
     </footer>
 
 </body>
